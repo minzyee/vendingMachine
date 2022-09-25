@@ -44,8 +44,13 @@ li {
 }
 
 .wrap {
-  margin: 0 auto;
-  width: 748px;
+  /* margin: 0 auto; */
+  /* width: 748px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   padding-bottom: 170px;
 }
 
@@ -64,8 +69,8 @@ li {
 .section-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 748px;
+  /* width: 748px; */
+  justify-content: space-between;
 }
 
 /* 왼쪽 섹션: 음료 진열장 */
@@ -73,11 +78,11 @@ li {
   background-color: #fff;
   width: 360px;
   height: 545px;
-  margin-right: 28px;
   padding: 30px 27px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 28px;
 }
 
 .drink-list {
@@ -99,6 +104,12 @@ li {
 /* .drink-list-item.on {
   border: 3px solid #6327FE;
 } */
+
+.drink-list-item {
+  position: relative;
+  /* border: 3px solid transparent; */
+}
+
 
 .drink-list-item > button {
   display: flex;
@@ -150,7 +161,6 @@ li {
   background-color: #491ac2;
 }
 
-
 /* 음료수와 코인 처리과정 상태 */
 .processing-status-view {
   height: 194px;
@@ -193,7 +203,7 @@ li {
 }
 
 .calc-btn:active {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(235, 235, 235);
 }
 
 /* 남은 잔액 상태 */
@@ -257,10 +267,19 @@ li {
   border-radius: 5px;
   margin-bottom: 6px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .add-drink-list-item:last-child > button {
   margin-bottom: 0;
+}
+
+.add-drink-list-item > button:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.add-drink-list-item > button:active {
+  background-color: rgb(235, 235, 235);
 }
 
 .add-drink-product-img {
@@ -298,7 +317,8 @@ li {
   background-color: #491ac2;
 }
 
-/* 획득한 음료 진열장 get-drink-window */
+
+/* 오른쪽 섹션: 획득한 음료 진열장 */
 .get-drink-display-window {
   width: 360px;
   height: 545px;
@@ -335,4 +355,28 @@ li {
   float: right;
   margin-top: 10px;
   font-size: 12px;
+}
+
+
+/* 모바일 화면 768px */
+/* 너비가 768px 이하일 때, 실행 됨  */
+@media (max-width: 767px) {
+
+  .wrap {
+    background-color: #fff;
+  }
+
+  .vendingMachine-title {
+    width: 166px;
+    height: 71px;
+    margin: 0;
+  }
+
+  .section-wrap {
+    width: 360px;
+  }
+
+  .drink-display-window {
+    margin-right: 0;
+  }
 }
