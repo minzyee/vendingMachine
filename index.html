@@ -4,65 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vendingMachine</title>
+  <title>Vending Machine</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="wrap">
-    <h1 class="vendingMachine-title">
+    <h1 class="vending-machine-title">
       <img src="./images/logo.png" alt="콜라콜라 벤딩머신">
     </h1>
     <div class="section-wrap">
 
-      <!-- 왼쪽 섹션: 음료 진열장 -->
+      <!-- 왼쪽 섹션: 음료수 진열장 -->
       <section class="drink-display-window">
         <h2 class="screen-out">음료수 진열장</h2>
         <!-- 음로수 리스트 -->
         <ul class="drink-list">
           <li class="drink-list-item on">
             <button>
-              <img src="./images/Original_Cola.png" alt="" class="drink-product-img">
-              <span class="drink-product-name">Original_Cola</span>
-              <strong class="drink-product-price">1000</strong>
+              <img src="./images/Original_Cola.png" alt="Original_Cola" class="drink-img">
+              <strong class="drink-name">Original_Cola</strong>
+              <strong class="drink-price">1000</strong>
             </button>
           </li>
           <li class="drink-list-item sold-out">
             <button>
-              <img src="./images/Violet_Cola.png" alt="" class="drink-product-img">
-              <span class="drink-product-name">Violet_Cola</span>
-              <strong class="drink-product-price">1000</strong>
+              <img src="./images/Violet_Cola.png" alt="Violet_Cola" class="drink-img">
+              <strong class="drink-name">Violet_Cola</strong>
+              <strong class="drink-price">1000</strong>
             </button>
           </li>
           <li class="drink-list-item">
             <button>
-              <img src="./images/Yellow_Cola.png" alt="" class="drink-product-img">
-              <span class="drink-product-name">Yellow_Cola</span>
-              <strong class="drink-product-price">1000</strong>
+              <img src="./images/Yellow_Cola.png" alt="Yellow_Cola" class="drink-img">
+              <strong class="drink-name">Yellow_Cola</strong>
+              <strong class="drink-price">1000</strong>
             </button>
           </li>
           <li class="drink-list-item">
             <button>
-              <img src="./images/Cool_Cola.png" alt="" class="drink-product-img">
-              <span class="drink-product-name">Cool_Cola</span>
-              <strong class="drink-product-price">1000</strong>
+              <img src="./images/Cool_Cola.png" alt="Cool_Cola" class="drink-img">
+              <strong class="drink-name">Cool_Cola</strong>
+              <strong class="drink-price">1000</strong>
             </button>
           </li>
           <li class="drink-list-item">
             <button>
-              <img src="./images/Green_Cola.png" alt="" class="drink-product-img">
-              <span class="drink-product-name">Green_Cola</span>
-              <strong class="drink-product-price">1000</strong>
+              <img src="./images/Green_Cola.png" alt="Green_Cola" class="drink-img">
+              <strong class="drink-name">Green_Cola</strong>
+              <strong class="drink-price">1000</strong>
             </button>
           </li>
           <li class="drink-list-item">
             <button>
-              <img src="./images/Orange_Cola.png" alt="" class="drink-product-img">
-              <span class="drink-product-name">Orange_Cola</span>
-              <strong class="drink-product-price">1000</strong>
+              <img src="./images/Orange_Cola.png" alt="Orange_Cola" class="drink-img">
+              <strong class="drink-name">Orange_Cola</strong>
+              <strong class="drink-price">1000</strong>
             </button>
           </li>
         </ul>
-        <!-- 코인 처리과정과 획득한 음료수 목록  -->
+        <!-- 코인 처리과정과 획득한 음료수 리스트  -->
         <div class="processing-status-view">
           <!-- 1. 코인 처리과정 -->
           <div class="money-calc-status">
@@ -71,7 +71,7 @@
             <div class="money-remaining-state money-calc-layout">
               <strong class="remaining-money money-status-view clearFix">
                 잔액: 
-                <span>1,000</span>
+                <strong>1,000</strong>
               </strong>
               <button type="button" class="calc-btn return-money-btn">거스름돈 반환</button>
             </div>
@@ -83,35 +83,35 @@
             </div>
           </div>
 
-          <!-- 2. 추가할 음료 목록 -->
+          <!-- 2. 추가할 음료수 리스트 -->
           <div class="add-drink-list-status">
             <ul class="add-drink-list">
               <li class="add-drink-list-item">
                 <button>
-                  <img src="./images/Original_Cola.png" alt="" class="add-drink-product-img">
-                  <span class="add-drink-product-name">Original_Cola</span>
-                  <span class="add-drink-product-count">1</span>
+                  <img src="./images/Original_Cola.png" alt="Original_Cola" class="add-drink-img">
+                  <span class="add-drink-name">Original_Cola</span>
+                  <span class="add-drink-count">1</span>
                 </button>
               </li>
               <li class="add-drink-list-item">
                 <button>
-                  <img src="./images/Green_Cola.png" alt="" class="add-drink-product-img">
-                  <span class="add-drink-product-name">Green_Cola</span>
-                  <span class="add-drink-product-count">2</span>
+                  <img src="./images/Green_Cola.png" alt="Green_Cola" class="add-drink-img">
+                  <span class="add-drink-name">Green_Cola</span>
+                  <span class="add-drink-count">2</span>
                 </button>
               </li>
               <li class="add-drink-list-item">
                 <button>
-                  <img src="./images/Orange_Cola.png" alt="" class="add-drink-product-img">
-                  <span class="add-drink-product-name">Orange_Cola</span>
-                  <span class="add-drink-product-count">1</span>
+                  <img src="./images/Orange_Cola.png" alt="Orange_Cola" class="add-drink-img">
+                  <span class="add-drink-name">Orange_Cola</span>
+                  <span class="add-drink-count">1</span>
                 </button>
               </li>
               <li class="add-drink-list-item">
                 <button>
-                  <img src="./images/Violet_Cola.png" alt="" class="add-drink-product-img">
-                  <span class="add-drink-product-name">Violet_Cola</span>
-                  <span class="add-drink-product-count">5</span>
+                  <img src="./images/Violet_Cola.png" alt="Violet_Cola" class="add-drink-img">
+                  <span class="add-drink-name">Violet_Cola</span>
+                  <span class="add-drink-count">5</span>
                 </button>
               </li>
             </ul>
@@ -121,52 +121,53 @@
         </div>
       </section>
 
-      <!-- 오른쪽 섹션: 획득한 음료 진열장 -->
+      <!-- 오른쪽 섹션: 획득한 음료수 리스트 -->
       <section class="get-drink-display-window">
+        <h2 class="screen-out">획득한 음료수 리스트</h2>
         <!-- 소지금 -->
         <div class="my-wallet-status money-calc-layout">
           <strong class="remaining-money money-status-view clearFix">
             소지금: 
-            <span>25,000</span>
+            <strong>25,000</strong>
           </strong>
         </div>
 
-        <!-- 획득한 음료수 목록 -->
+        <!-- 획득한 음료수 리스트 -->
         <div class="get-drink-list-status clearFix">
           <h2>획득한 음료</h2>
           <ul class="add-drink-list get-drink">
             <li class="add-drink-list-item get-drink">
               <button>
-                <img src="./images/Original_Cola.png" alt="" class="add-drink-product-img get-drink">
-                <span class="add-drink-product-name get-drink">Original_Cola</span>
-                <span class="add-drink-product-count get-drink">1</span>
+                <img src="./images/Original_Cola.png" alt="Original_Cola" class="add-drink-img get-drink">
+                <span class="add-drink-name get-drink">Original_Cola</span>
+                <span class="add-drink-count get-drink">1</span>
               </button>
             </li>
             <li class="add-drink-list-item get-drink">
               <button>
-                <img src="./images/Green_Cola.png" alt="" class="add-drink-product-img get-drink">
-                <span class="add-drink-product-name get-drink">Green_Cola</span>
-                <span class="add-drink-product-count get-drink">2</span>
+                <img src="./images/Green_Cola.png" alt="Green_Cola" class="add-drink-img get-drink">
+                <span class="add-drink-name get-drink">Green_Cola</span>
+                <span class="add-drink-count get-drink">2</span>
               </button>
             </li>
             <li class="add-drink-list-item get-drink">
               <button>
-                <img src="./images/Orange_Cola.png" alt="" class="add-drink-product-img get-drink">
-                <span class="add-drink-product-name get-drink">Orange_Cola</span>
-                <span class="add-drink-product-count get-drink">1</span>
+                <img src="./images/Orange_Cola.png" alt="Orange_Cola" class="add-drink-img get-drink">
+                <span class="add-drink-name get-drink">Orange_Cola</span>
+                <span class="add-drink-count get-drink">1</span>
               </button>
             </li>
             <li class="add-drink-list-item get-drink">
               <button>
-                <img src="./images/Violet_Cola.png" alt="" class="add-drink-product-img get-drink">
-                <span class="add-drink-product-name get-drink">Violet_Cola</span>
-                <span class="add-drink-product-count get-drink">5</span>
+                <img src="./images/Violet_Cola.png" alt="Violet_Cola" class="add-drink-img get-drink">
+                <span class="add-drink-name get-drink">Violet_Cola</span>
+                <span class="add-drink-count get-drink">5</span>
               </button>
             </li>
           </ul>
           <strong class="total-amount">
             총 금액: 
-            <span>9,000</span>
+            <strong>9,000</strong>
           </strong>
         </div>
       </section>
